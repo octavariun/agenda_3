@@ -1,0 +1,17 @@
+
+sauna:
+  nome: sauna
+  quantidade: 5
+
+consultorio:
+  nome: consultorio
+  quantidade: 1
+
+salinha:
+  nome: salinha
+  quantidade: 0
+
+local_para_uma_pessoas:
+  nome: local para duas pessoas
+  quantidade: 1
+
