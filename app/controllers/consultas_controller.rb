@@ -11,18 +11,18 @@ class ConsultasController < ApplicationController
     config.columns[:data_hora].form_ui = :calendar_date_select
     config.list.sorting = [{ :data_hora => :asc}, {:pessoa_id => :asc }]
   end
-#
-#  def conditions_for_collection
-#    ["data_hora::date = ?",Date.today]
-#  end
-  
-  #def gravar_efetuado
-  #    consulta = Consulta.find(params[:consulta_id])
-  #    consulta.efetuado = params[:efetuado]
-  #    consulta.save
-  #    render :nothing => true
-  #  end
   #
+  #  def conditions_for_collection
+  #    ["data_hora::date = ?",Date.today]
+  #  end
+  
+  def gravar_efetuado
+    consulta = Consulta.find(params[:consulta_id])
+    consulta.efetuado = params[:efetuado]
+    consulta.save
+    render :nothing => true
+  end
+ 
   #  def gravar_convenio
   #    consulta = Consulta.find(params[:consulta_id])
   #    consulta.convenio = Convenio.find(params[:convenio_id])

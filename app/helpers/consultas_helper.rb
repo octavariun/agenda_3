@@ -29,12 +29,9 @@ module ConsultasHelper
 
   end
 
-  #def list_active_scaffold
-  #h = HtmlGenerator.new
-  #h.append "<h1>casssiooooooooooooo</h1>"
-  #h.html
-  #end
-
+  def efetuado_form_column(record,input_name)
+    check_box_tag "Efetuado", true, record.efetuado, :onclick => remote_function(:url => {:action => "gravar_efetuado"},:with => "'consulta_id=#{record.id}&efetuado=' + this.checked")
+  end
 
  
 end

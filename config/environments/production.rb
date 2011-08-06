@@ -26,3 +26,7 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+ 
+#alterar localhost para ip da maquina
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }

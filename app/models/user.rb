@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation
+
+#  def self.criptografar(mensagem)
+#    Digest::SHA1.hexdigest(mensagem)
+#  end
+  
 end

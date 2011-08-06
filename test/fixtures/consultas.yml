@@ -1,5 +1,5 @@
 consulta_1:
-    pessoa: cassio
+    pessoa: luke
     data_hora: 2010-11-19 08:30
     efetuado: true
     convenio: unimed
@@ -7,7 +7,7 @@ consulta_1:
     local: sauna
 
 consulta_2:
-    pessoa: geison
+    pessoa: solo
     data_hora: 2010-11-19 09:00
     efetuado: true
     convenio: unimed
@@ -23,7 +23,7 @@ consulta_3:
     local: sauna
 
 consulta_4:
-    pessoa: cassio
+    pessoa: luke
     data_hora: 2010-11-17 09:30
     efetuado: true
     convenio: unimed
@@ -39,7 +39,7 @@ consulta_5:
     local: sauna
 
 consulta_6:
-    pessoa: geison
+    pessoa: solo
     data_hora: 2010-11-18 09:30
     efetuado: false
     convenio: unimed
@@ -47,7 +47,7 @@ consulta_6:
     local: sauna
 
 consulta_sem_lugar:
-    pessoa: cassio
+    pessoa: luke
     data_hora: 2010-11-19 08:30
     efetuado: true
     convenio: unimed
@@ -55,17 +55,9 @@ consulta_sem_lugar:
     local: salinha
 
 consulta_para_uma_pessoa:
-    pessoa: geison
+    pessoa: solo
     data_hora: 2010-12-08 08:30
     efetuado: true
     convenio: unimed
     valor: 100.00
     local: consultorio
-
-consulta_teste_para_duas_pessoa:
-    pessoa: geison
-    data_hora: 2010-12-08 08:30
-    efetuado: false
-    convenio: unimed
-    valor: 101.00
-    local: local_para_uma_pessoas

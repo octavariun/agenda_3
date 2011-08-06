@@ -12,7 +12,7 @@ class ConsultaTest < ActiveSupport::TestCase
     assert consulta.errors[:local]
 
   end
-
+  
   test "testa valida se a hora não é 0:00" do
     consulta = Consulta.new
     consulta.data_hora = "2010-11-10 00:00".to_time

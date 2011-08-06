@@ -2,7 +2,7 @@
 # four configuration values can also be set straight in your models.
 Devise.setup do |config|
   # Configure the e-mail address which will be shown in DeviseMailer.
-  config.mailer_sender = "please-change-me@config-initializers-devise.com"
+  config.mailer_sender = "no-reply@agenda.com"
   
   # Configure the content type of DeviseMailer mails (defaults to text/html")
   # config.mailer_content_type = "text/plain"
@@ -54,7 +54,7 @@ Devise.setup do |config|
   # :email = Sends an unlock link to the user email
   # :time  = Reanables login after a certain ammount of time (see :unlock_in below)
   # :both  = enables both strategies
-  # config.unlock_strategy = :both
+   config.unlock_strategy = :email
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   # config.unlock_in = 1.hour

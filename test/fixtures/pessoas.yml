@@ -1,23 +1,32 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  nome: MyString
-  cpf: MyString
-  telefone: MyString
-  email: MyString
-  endereco: MyString
+luke:
+  nome: Luke Skywalker
+  cpf: 05941435940
+  telefone: 4688044306
+  email: octavariun@gmail.com
+  endereco: Alameda Tangará
   numero: 1
-  bairro: MyString
-  cep: MyString
-  cidade: 
+  bairro: miniguaçu
+  cep: 85605490
+  cidade: francisco_beltrao
 
-two:
-  nome: MyString
-  cpf: MyString
-  telefone: MyString
-  email: MyString
-  endereco: MyString
-  numero: 1
-  bairro: MyString
-  cep: MyString
-  cidade: 
+solo:
+  nome: Han Solo
+  cpf: 05101288900
+  telefone: 4688186530
+  email: h.solo@gmail.com
+  endereco: Bolivia
+  numero: 359
+  bairro: Luther King
+  cidade: francisco_beltrao
+  cep: 85605410
+
+goku:
+  nome: Son Goku
+  cpf: 03931465041
+  telefone: 4688041234
+  email: goku@genkidama.com
+  endereco: Alameda
+  numero: 100
+  bairro: vila nova
+  cidade: francisco_beltrao
+  cep: 85605490

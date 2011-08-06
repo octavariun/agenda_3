@@ -1,4 +1,3 @@
-
 sauna:
   nome: sauna
   quantidade: 5
@@ -12,6 +11,6 @@ salinha:
   quantidade: 0
 
 local_para_uma_pessoas:
-  nome: local para duas pessoas
+  nome: local para uma pessoas
   quantidade: 1
 
