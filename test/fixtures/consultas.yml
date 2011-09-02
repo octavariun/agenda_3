@@ -1,63 +1,63 @@
 consulta_1:
-    pessoa: luke
+    pessoa_id: 1
     data_hora: 2010-11-19 08:30
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_2:
-    pessoa: solo
+    pessoa_id: 2
     data_hora: 2010-11-19 09:00
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_3:
-    pessoa: goku
+    pessoa_id: 3
     data_hora: 2010-11-19 09:30
     efetuado: true
-    convenio: pasc
+    convenio_id: 2
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_4:
-    pessoa: luke
+    pessoa_id: 1
     data_hora: 2010-11-17 09:30
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_5:
-    pessoa: goku
+    pessoa_id: 3
     data_hora: 2010-11-18 09:30
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_6:
-    pessoa: solo
+    pessoa_id: 2
     data_hora: 2010-11-18 09:30
     efetuado: false
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: sauna
+    local_id: 1
 
 consulta_sem_lugar:
-    pessoa: luke
+    pessoa_id: 1
     data_hora: 2010-11-19 08:30
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: salinha
+    local_id: 3
 
 consulta_para_uma_pessoa:
-    pessoa: solo
+    pessoa_id: 2
     data_hora: 2010-12-08 08:30
     efetuado: true
-    convenio: unimed
+    convenio_id: 1
     valor: 100.00
-    local: consultorio
+    local_id: 4

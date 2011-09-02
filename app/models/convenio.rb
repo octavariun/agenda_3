@@ -5,7 +5,7 @@ class Convenio < ActiveRecord::Base
   pesquisar_por "convenios.id", "convenios.nome"
 
   def descricao_para_pesquisa
-    "#{id} - #{nome}"
+    "#{nome}"
   end
 
   def to_label

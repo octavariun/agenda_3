@@ -1,7 +1,7 @@
 francisco_beltrao:
   nome: Francisco Beltrão
-  estado: parana
+  estado_id: 1
 
 marmeleiro:
   nome: marmeleiro
-  estado: parana
+  estado_id: 1

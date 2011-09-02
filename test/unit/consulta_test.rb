@@ -49,7 +49,7 @@ class ConsultaTest < ActiveSupport::TestCase
 
   test "se valida local por horario" do
     consulta = Consulta.new
-    consulta.local = locais(:local_para_uma_pessoas)
+    consulta.local = locais(:local_para_uma_pessoa)
     consulta.data_hora = "2010-12-08 08:30".to_time
     consulta.valid?
     assert(consulta.errors[:local],"esta lotado, escolha outro")

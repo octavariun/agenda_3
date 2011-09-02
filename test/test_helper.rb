@@ -39,8 +39,8 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 class ActionController::TestCase
-  include Devise::TestHelpers
-  def logar()
-    sign_in :user, users(:cassio)
-  end
+#  include Devise::TestHelpers
+#  def logar()
+#    sign_in :user, users(:cassio)
+#  end
 end

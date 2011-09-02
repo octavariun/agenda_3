@@ -33,5 +33,6 @@ module ConsultasHelper
     check_box_tag "Efetuado", true, record.efetuado, :onclick => remote_function(:url => {:action => "gravar_efetuado"},:with => "'consulta_id=#{record.id}&efetuado=' + this.checked")
   end
 
+
  
 end

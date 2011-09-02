@@ -1,7 +1,9 @@
 parana:
+  id: 1
   nome: Paraná
   sigla: PR
 
 santa_catarina:
+  id: 2
   nome: Santa Catarina
   sigla: SC

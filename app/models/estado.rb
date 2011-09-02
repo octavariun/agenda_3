@@ -1,5 +1,5 @@
 class Estado < ActiveRecord::Base
-  validates_presence_of :nome, :sigla
+  validates_presence_of :nome
   validates_format_of :sigla, :with => /^[A-Z]{2}$/i
 
   pesquisar_por "estados.id", "estados.nome"

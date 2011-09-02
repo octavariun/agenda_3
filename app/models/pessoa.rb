@@ -8,7 +8,7 @@ class Pessoa < ActiveRecord::Base
   pesquisar_por "pessoas.id", "pessoas.nome"
 
   def descricao_para_pesquisa
-    "#{id} - #{nome}"
+    "#{nome}"
   end
   
   def to_label

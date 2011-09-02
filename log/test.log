@@ -910,3 +910,2478 @@ Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-01 21:53:
 Completed in 309ms (View: 252, DB: 119) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
   [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
   [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.4ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mConvenio Load (1.1ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 331859011) [0m
+
+
+Processing ConsultasController#gravar_convenio (for 0.0.0.0 at 2011-08-22 19:54:26) [POST]
+  Parameters: {"convenio_id"=>"331859011", "consulta_id"=>"83439630"}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 3ms (DB: 346) | 302 Found [http://test.host/consultas/gravar_convenio?consulta_id=83439630&convenio_id=331859011]
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mConvenio Load (0.8ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.4ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mConvenio Load (1.1ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 331859011) [0m
+
+
+Processing ConsultasController#gravar_convenio (for 0.0.0.0 at 2011-08-22 19:56:16) [POST]
+  Parameters: {"convenio_id"=>"331859011", "consulta_id"=>"83439630"}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 101) | 302 Found [http://test.host/consultas/gravar_convenio?consulta_id=83439630&convenio_id=331859011]
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mConvenio Load (0.9ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (1.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 962534057) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-22 20:11:06) [POST]
+  Parameters: {"record"=>{"data_hora"=>"19/11/2010 12:00", "convenio_id"=>408628902, "valor"=>120, "pessoa_id"=>962534057, "local_id"=>674971705}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 65) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=408628902&record%5Bdata_hora%5D=19%2F11%2F2010+12%3A00&record%5Blocal_id%5D=674971705&record%5Bpessoa_id%5D=962534057&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 962534057) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-22 20:18:22) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>408628902, "valor"=>120, "pessoa_id"=>962534057, "local_id"=>674971705}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 92) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=408628902&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=674971705&record%5Bpessoa_id%5D=962534057&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-22 20:19:58) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>408628902, "valor"=>120, "pessoa_id"=>1, "local_id"=>674971705}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 99) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=408628902&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=674971705&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-22 20:22:20) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 106) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 08:26:51) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mConsulta Load (1.1ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 962534057) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed in 432ms (View: 403, DB: 321) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;36;1mConsulta Load (1.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (41.2ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.8ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.8ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 08:26:51) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 49) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 08:30:47) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 962534057) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 408628902) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 674971705) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed in 256ms (View: 236, DB: 76) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.9ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.8ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 08:30:47) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+Redirected to http://test.host/users/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_user!] rendered_or_redirected.
+Completed in 2ms (DB: 5) | 302 Found [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (1.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:01:53) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.1ms)
+Rendered _form_messages (16.1ms)
+Rendered _form_attribute (8.2ms)
+Rendered _form_attribute (14.0ms)
+Rendered _form_attribute (12.6ms)
+Rendered _form_attribute (9.9ms)
+Rendered _form_attribute (3.6ms)
+Rendered _form_attribute (2.1ms)
+Rendered _form (259.3ms)
+Rendered _create_form (287.5ms)
+Completed in 655ms (View: 632, DB: 85) | 200 OK [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:02:34) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:02:34.340710', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 117ms (View: 94, DB: 60) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (1.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:02:34) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.9ms)
+Rendered _form_messages (13.0ms)
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (133.2ms)
+Rendered _form_attribute (6.4ms)
+Rendered _form_attribute (6.9ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (2.3ms)
+Rendered _form (164.4ms)
+Rendered _create_form (185.0ms)
+Completed in 203ms (View: 195, DB: 6) | 200 OK [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:21:37) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:21:37.638967', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 113ms (View: 92, DB: 47) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:21:37) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.3ms)
+Rendered _form_messages (13.7ms)
+Rendered _form_attribute (3.4ms)
+Rendered _form_attribute (5.8ms)
+Rendered _form_attribute (10.3ms)
+Rendered _form_attribute (6.1ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (1.7ms)
+Rendered _form (164.3ms)
+Rendered _create_form (186.3ms)
+Completed in 203ms (View: 196, DB: 4) | 200 OK [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:22:09) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:22:09.717423', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 112ms (View: 90, DB: 59) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:22:09) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "convenio_id"=>1, "valor"=>120, "pessoa_id"=>1, "local_id"=>1}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.2ms)
+Rendered _form_messages (11.6ms)
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (6.3ms)
+Rendered _form_attribute (10.4ms)
+Rendered _form_attribute (6.1ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (1.8ms)
+Rendered _form (160.5ms)
+Rendered _create_form (178.7ms)
+Completed in 195ms (View: 188, DB: 4) | 200 OK [http://test.host/consultas/create?record%5Bconvenio_id%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal_id%5D=1&record%5Bpessoa_id%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (91.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:24:52) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:24:52.886241', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 113ms (View: 90, DB: 134) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:24:52) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>1, "valor"=>120, "convenio"=>1, "pessoa"=>1}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:25:41) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:25:41.469996', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 111ms (View: 90, DB: 57) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:25:41) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>1, "valor"=>120, "convenio"=>1, "pessoa"=>1}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:26:50) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:26:50.296522', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 112ms (View: 91, DB: 50) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:26:50) [POST]
+  Parameters: {"record"=>{"data_hora"=>"Agosto 29, 2011 3:23 PM", "local"=>1, "valor"=>120, "convenio"=>1, "pessoa"=>1}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:28:29) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (3.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (1.0ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:28:29.632886', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 132ms (View: 96, DB: 55) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:28:29) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (1.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (1.2ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.9ms)
+Rendered _form_messages (6.0ms)
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (4.8ms)
+Rendered _form_attribute (133.0ms)
+Rendered _form_attribute (5.3ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (1.7ms)
+Rendered _form (160.8ms)
+Rendered _create_form (173.9ms)
+Completed in 204ms (View: 183, DB: 7) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:29:50) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:29:50.565821', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 116ms (View: 93, DB: 93) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:29:50) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.2ms)
+Rendered _form_messages (6.7ms)
+Rendered _form_attribute (3.4ms)
+Rendered _form_attribute (6.1ms)
+Rendered _form_attribute (131.1ms)
+Rendered _form_attribute (5.3ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (1.7ms)
+Rendered _form (160.9ms)
+Rendered _create_form (174.4ms)
+Completed in 203ms (View: 184, DB: 6) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:29:58) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:29:58.676582', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 123ms (View: 98, DB: 63) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:29:58) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.1ms)
+Rendered _form_messages (6.9ms)
+Rendered _form_attribute (3.3ms)
+Rendered _form_attribute (5.3ms)
+Rendered _form_attribute (134.0ms)
+Rendered _form_attribute (5.1ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.7ms)
+Rendered _form (161.5ms)
+Rendered _create_form (176.3ms)
+Completed in 205ms (View: 186, DB: 6) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:30:45) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:30:45.325876', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 113ms (View: 92, DB: 47) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:30:45) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.0ms)
+Rendered _form_messages (6.2ms)
+Rendered _form_attribute (3.4ms)
+Rendered _form_attribute (4.8ms)
+Rendered _form_attribute (127.1ms)
+Rendered _form_attribute (5.1ms)
+Rendered _form_attribute (1.9ms)
+Rendered _form_attribute (1.8ms)
+Rendered _form (154.6ms)
+Rendered _create_form (168.0ms)
+Completed in 196ms (View: 177, DB: 5) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:31:10) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (1.1ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:31:10.468104', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 113ms (View: 91, DB: 68) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:31:10) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2011-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (1.3ms)
+Rendered _form_messages (7.3ms)
+Rendered _form_attribute (3.5ms)
+Rendered _form_attribute (4.8ms)
+Rendered _form_attribute (125.5ms)
+Rendered _form_attribute (5.7ms)
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (1.8ms)
+Rendered _form (153.6ms)
+Rendered _create_form (168.1ms)
+Completed in 196ms (View: 177, DB: 6) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2011-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2011-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:32:20) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:32:20.871069', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 118ms (View: 95, DB: 59) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:32:20) [POST]
+  Parameters: {"record"=>{"data_hora"=>"27/08/2011 15:32 PM", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.9ms)
+Rendered _form_messages (8.3ms)
+Rendered _form_attribute (4.7ms)
+Rendered _form_attribute (4.9ms)
+Rendered _form_attribute (5.0ms)
+Rendered _form_attribute (5.6ms)
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (1.7ms)
+Rendered _form (158.2ms)
+Rendered _create_form (173.2ms)
+Completed in 202ms (View: 183, DB: 5) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=27%2F08%2F2011+15%3A32+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:32:52) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:32:52.732362', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 116ms (View: 93, DB: 55) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:32:52) [POST]
+  Parameters: {"record"=>{"data_hora"=>"27/08/2011 15:32 PM", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.9ms)
+Rendered _form_messages (7.3ms)
+Rendered _form_attribute (4.4ms)
+Rendered _form_attribute (4.6ms)
+Rendered _form_attribute (5.7ms)
+Rendered _form_attribute (5.2ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.8ms)
+Rendered _form (156.3ms)
+Rendered _create_form (170.3ms)
+Completed in 198ms (View: 179, DB: 6) | 200 OK [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=27%2F08%2F2011+15%3A32+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:34:34) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:34:34.827388', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 115ms (View: 93, DB: 59) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:34:34) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:34:34.955106', 1, '2011-08-27 18:34:34.955106', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 27ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:35:02) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.9ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:35:02.104654', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 114ms (View: 90, DB: 85) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:35:02) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:35:02.229270', 1, '2011-08-27 18:35:02.229270', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 28ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.0ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (1.0ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.8ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mConvenio Load (0.9ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:36:33) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:36:33.787094', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 114ms (View: 91, DB: 55) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:36:33) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:36:33.912569', 1, '2011-08-27 18:36:33.912569', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 32ms (DB: 8) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:36:44) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:36:44.059076', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 112ms (View: 91, DB: 62) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:36:44) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:36:44.183662', 1, '2011-08-27 18:36:44.183662', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 30ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (1.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:36:55) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:36:55.980341', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 113ms (View: 91, DB: 59) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:36:56) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:36:56.106034', 1, '2011-08-27 18:36:56.106034', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 29ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (2.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:37:14) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:37:14.745235', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 114ms (View: 92, DB: 45) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:37:14) [POST]
+  Parameters: {"record"=>{"data_hora"=>"2012-08-22 12:00", "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.9ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:37:14.875326', 1, '2011-08-27 18:37:14.875326', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 34ms (DB: 8) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=2012-08-22+12%3A00&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:37:34) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:37:34.341101', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 114ms (View: 92, DB: 53) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:37:34) [POST]
+  Parameters: {"record"=>{"data_hora"=>Wed Aug 22 12:00:00 UTC 2012, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2012-08-22 12:00:00.000000', '2011-08-27 18:37:34.464840', 1, '2011-08-27 18:37:34.464840', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 26ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2012+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:37:50) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:37:50.898181', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 116ms (View: 93, DB: 48) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:37:51) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-27 18:37:51.023588', 1, '2011-08-27 18:37:51.023588', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 26ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:38:01) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:38:01.850111', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 112ms (View: 89, DB: 53) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (1.2ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:38:01) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-27 18:38:01.972696', 1, '2011-08-27 18:38:01.972696', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 27ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:38:09) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.8ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:38:09.940459', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 112ms (View: 90, DB: 60) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:38:10) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-27 18:38:10.065758', 1, '2011-08-27 18:38:10.065758', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 30ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 2) [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 2) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+
+
+Processing CidadesController#create (for 0.0.0.0 at 2011-08-27 15:39:36) [POST]
+  Parameters: {"cidade"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing CidadesController#index (for 0.0.0.0 at 2011-08-27 15:39:36) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;35;1mCidade Load (0.9ms)[0m   [0mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mEstado Load (0.8ms)[0m   [0;1mSELECT * FROM "estados" WHERE ("estados"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.6ms)
+Rendered _list_column_headings (6.9ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (4.5ms)
+Rendered _list_record (8.7ms)
+Rendered _list_actions (3.5ms)
+Rendered _list_record (5.6ms)
+Rendered _list (27.3ms)
+Completed in 250ms (View: 241, DB: 64) | 200 OK [http://test.host/cidades]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CidadesController#new (for 0.0.0.0 at 2011-08-27 15:39:36) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.8ms)
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (4.3ms)
+Rendered _form (10.3ms)
+Rendered _create_form (17.8ms)
+Completed in 26ms (View: 24, DB: 1) | 200 OK [http://test.host/cidades/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-27 15:39:36) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.7ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Update (0.8ms)[0m   [0;1mUPDATE "consultas" SET "updated_at" = '2011-08-27 18:39:36.490343', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Completed in 227ms (View: 207, DB: 8) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-27 15:39:36) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.8ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-27 18:39:36.731275', 1, '2011-08-27 18:39:36.731275', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 31ms (DB: 8) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+
+
+Processing ConveniosController#create (for 0.0.0.0 at 2011-08-27 15:39:36) [POST]
+  Parameters: {"convenio"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#index (for 0.0.0.0 at 2011-08-27 15:39:36) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;35;1mConvenio Load (0.7ms)[0m   [0mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.0ms)
+Rendered _list_column_headings (3.6ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (6.6ms)
+Rendered _list_actions (3.6ms)
+Rendered _list_record (5.3ms)
+Rendered _list (19.6ms)
+Completed in 255ms (View: 249, DB: 11) | 200 OK [http://test.host/convenios]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#new (for 0.0.0.0 at 2011-08-27 15:39:37) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.5ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form (3.0ms)
+Rendered _create_form (9.9ms)
+Completed in 18ms (View: 15, DB: 1) | 200 OK [http://test.host/convenios/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+
+
+Processing PessoasController#create (for 0.0.0.0 at 2011-08-27 15:39:37) [POST]
+  Parameters: {"pessoa"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+
+
+Processing PessoasController#index (for 0.0.0.0 at 2011-08-27 15:39:37) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mCidade Load (0.7ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 660927305) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (3.6ms)
+Rendered _list_column_headings (24.4ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (4.0ms)
+Rendered _list_record (10.5ms)
+Rendered _list_actions (3.5ms)
+Rendered _list_record (9.0ms)
+Rendered _list_actions (3.4ms)
+Rendered _list_record (8.9ms)
+Rendered _list (57.9ms)
+Completed in 294ms (View: 285, DB: 10) | 200 OK [http://test.host/pessoas]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PessoasController#new (for 0.0.0.0 at 2011-08-27 15:39:37) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.3ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (4.3ms)
+Rendered _form (25.5ms)
+Rendered _create_form (31.0ms)
+Completed in 169ms (View: 166, DB: 1) | 200 OK [http://test.host/pessoas/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 08:17:13) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (1.0ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-29 11:17:13.161784', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 286ms (View: 245, DB: 283) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 08:17:13) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 11:17:13.481038', 1, '2011-08-29 11:17:13.481038', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 52ms (DB: 24) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.2ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 2) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 2) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (1.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+
+
+Processing CidadesController#create (for 0.0.0.0 at 2011-08-29 08:19:10) [POST]
+  Parameters: {"cidade"=>{}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mBEGIN[0m
+
+
+Processing CidadesController#index (for 0.0.0.0 at 2011-08-29 08:19:10) [GET]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;35;1mCidade Load (1.3ms)[0m   [0mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mEstado Load (1.0ms)[0m   [0;1mSELECT * FROM "estados" WHERE ("estados"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (6.8ms)
+Rendered _list_column_headings (8.6ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (5.5ms)
+Rendered _list_record (10.6ms)
+Rendered _list_actions (3.6ms)
+Rendered _list_record (6.1ms)
+Rendered _list (32.5ms)
+Completed in 461ms (View: 447, DB: 208) | 200 OK [http://test.host/cidades]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CidadesController#new (for 0.0.0.0 at 2011-08-29 08:19:11) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (2.3ms)
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (7.4ms)
+Rendered _form (14.2ms)
+Rendered _create_form (23.5ms)
+Completed in 38ms (View: 32, DB: 1) | 200 OK [http://test.host/cidades/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 08:19:11) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.7ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.8ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Update (0.8ms)[0m   [0;1mUPDATE "consultas" SET "updated_at" = '2011-08-29 11:19:11.156768', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Completed in 257ms (View: 234, DB: 8) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 08:19:11) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mLocal Load (1.9ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 11:19:11.425234', 1, '2011-08-29 11:19:11.425234', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 27ms (DB: 8) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (1.1ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+
+
+Processing ConveniosController#create (for 0.0.0.0 at 2011-08-29 08:19:11) [POST]
+  Parameters: {"convenio"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#index (for 0.0.0.0 at 2011-08-29 08:19:11) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;35;1mConvenio Load (0.7ms)[0m   [0mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.6ms)
+Rendered _list_column_headings (3.5ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (6.7ms)
+Rendered _list_actions (3.7ms)
+Rendered _list_record (6.3ms)
+Rendered _list (21.1ms)
+Completed in 274ms (View: 268, DB: 12) | 200 OK [http://test.host/convenios]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#new (for 0.0.0.0 at 2011-08-29 08:19:11) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.4ms)
+Rendered _form_messages (1.8ms)
+Rendered _form_attribute (1.6ms)
+Rendered _form (4.1ms)
+Rendered _create_form (12.1ms)
+Completed in 22ms (View: 19, DB: 1) | 200 OK [http://test.host/convenios/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+
+
+Processing PessoasController#create (for 0.0.0.0 at 2011-08-29 08:19:11) [POST]
+  Parameters: {"pessoa"=>{}}
+  [4;35;1mSQL (0.7ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing PessoasController#index (for 0.0.0.0 at 2011-08-29 08:19:11) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mCidade Load (0.9ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 660927305) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.6ms)
+Rendered _list_column_headings (26.5ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (10.7ms)
+Rendered _list_actions (3.6ms)
+Rendered _list_record (9.2ms)
+Rendered _list_actions (3.7ms)
+Rendered _list_record (9.5ms)
+Rendered _list (60.9ms)
+Completed in 318ms (View: 306, DB: 11) | 200 OK [http://test.host/pessoas]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PessoasController#new (for 0.0.0.0 at 2011-08-29 08:19:12) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.2ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (1.1ms)
+Rendered _form_attribute (4.2ms)
+Rendered _form (26.0ms)
+Rendered _create_form (31.6ms)
+Completed in 179ms (View: 177, DB: 1) | 200 OK [http://test.host/pessoas/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (7.4ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (7.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.2ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 2) [0m
+  [4;36;1mConsulta Load (4.4ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 2) [0m
+  [4;35;1mSQL (4.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (4.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (12.5ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (2.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (5.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (4.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (8.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (14.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (0.8ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 2) [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 2) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2012-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.2ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.1ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+
+
+Processing CidadesController#create (for 0.0.0.0 at 2011-08-29 08:28:30) [POST]
+  Parameters: {"cidade"=>{}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing CidadesController#index (for 0.0.0.0 at 2011-08-29 08:28:30) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cidades" [0m
+  [4;35;1mCidade Load (1.0ms)[0m   [0mSELECT "cidades".* FROM "cidades" ORDER BY "cidades"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mEstado Load (0.8ms)[0m   [0;1mSELECT * FROM "estados" WHERE ("estados"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.9ms)
+Rendered _list_column_headings (7.3ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (5.4ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (3.5ms)
+Rendered _list_record (5.8ms)
+Rendered _list (29.3ms)
+Completed in 479ms (View: 469, DB: 54) | 200 OK [http://test.host/cidades]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CidadesController#new (for 0.0.0.0 at 2011-08-29 08:28:31) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.8ms)
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (6.9ms)
+Rendered _form (13.3ms)
+Rendered _create_form (21.8ms)
+Completed in 35ms (View: 33, DB: 1) | 200 OK [http://test.host/cidades/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mConsulta Load (1.6ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 08:28:31) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.7ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mLocal Load (0.7ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Update (0.8ms)[0m   [0;1mUPDATE "consultas" SET "updated_at" = '2011-08-29 11:28:31.321497', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Completed in 277ms (View: 257, DB: 10) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 08:28:31) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mLocal Load (0.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 11:28:31.614352', 1, '2011-08-29 11:28:31.614352', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 35ms (DB: 8) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.9ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (3.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+
+
+Processing ConveniosController#create (for 0.0.0.0 at 2011-08-29 08:28:31) [POST]
+  Parameters: {"convenio"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#index (for 0.0.0.0 at 2011-08-29 08:28:31) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;35;1mConvenio Load (0.6ms)[0m   [0mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (3.7ms)
+Rendered _list_column_headings (3.4ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (3.9ms)
+Rendered _list_record (6.2ms)
+Rendered _list_actions (3.6ms)
+Rendered _list_record (5.5ms)
+Rendered _list (19.0ms)
+Completed in 281ms (View: 275, DB: 16) | 200 OK [http://test.host/convenios]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+
+
+Processing ConveniosController#new (for 0.0.0.0 at 2011-08-29 08:28:31) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.2ms)
+Rendered _form_messages (1.3ms)
+Rendered _form_attribute (1.3ms)
+Rendered _form (3.2ms)
+Rendered _create_form (9.3ms)
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://test.host/convenios/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+
+
+Processing PessoasController#create (for 0.0.0.0 at 2011-08-29 08:28:32) [POST]
+  Parameters: {"pessoa"=>{}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing PessoasController#index (for 0.0.0.0 at 2011-08-29 08:28:32) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mCidade Load (0.7ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 660927305) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (3.6ms)
+Rendered _list_column_headings (24.6ms)
+Rendered _messages (0.2ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (10.9ms)
+Rendered _list_actions (3.7ms)
+Rendered _list_record (9.5ms)
+Rendered _list_actions (3.6ms)
+Rendered _list_record (9.8ms)
+Rendered _list (59.8ms)
+Completed in 300ms (View: 290, DB: 9) | 200 OK [http://test.host/pessoas]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PessoasController#new (for 0.0.0.0 at 2011-08-29 08:28:32) [GET]
+Rendering template within layouts/application
+Rendering create
+Rendered _messages (0.3ms)
+Rendered _form_messages (1.8ms)
+Rendered _form_attribute (3.2ms)
+Rendered _form_attribute (4.7ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (1.2ms)
+Rendered _form_attribute (4.2ms)
+Rendered _form (38.8ms)
+Rendered _create_form (46.3ms)
+Completed in 190ms (View: 184, DB: 2) | 200 OK [http://test.host/pessoas/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.1ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (1.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 08:58:46) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.9ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-29 11:58:46.597671', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 228ms (View: 201, DB: 62) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 08:58:46) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 11:58:46.830278', 1, '2011-08-29 11:58:46.830278', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 25ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 08:59:57) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (1.0ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-29 11:59:57.879511', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 232ms (View: 205, DB: 56) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 08:59:58) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.6ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 11:59:58.115958', 1, '2011-08-29 11:59:58.115958', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 25ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 460161707) [0m
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 2) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.8ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 3) [0m
+  [4;36;1mConsulta Load (0.8ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = NULL ) AND ("consultas".local_id = 3) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocal Load (0.7ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 4) [0m
+  [4;36;1mConsulta Load (0.9ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-12-08 08:30:00.000000' ) AND ("consultas".local_id = 4) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+
+
+Processing ConsultasController#gravar_efetuado (for 0.0.0.0 at 2011-08-29 15:30:11) [POST]
+  Parameters: {"consulta_id"=>"83439630", "efetuado"=>false}
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (1.1ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConsulta Load (1.1ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-19 08:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mConsulta Update (0.9ms)[0m   [0mUPDATE "consultas" SET "updated_at" = '2011-08-29 18:30:11.855571', "efetuado" = 'f' WHERE "id" = 83439630[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Completed in 391ms (View: 363, DB: 53) | 200 OK [http://test.host/consultas/gravar_efetuado?consulta_id=83439630]
+  [4;35;1mConsulta Load (0.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 83439630) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+
+
+Processing ConsultasController#create (for 0.0.0.0 at 2011-08-29 15:30:12) [POST]
+  Parameters: {"record"=>{"data_hora"=>Sun Aug 22 12:00:00 UTC 2010, "local"=>"1", "valor"=>"120", "convenio"=>"1", "pessoa"=>"1"}}
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.6ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-08-22 12:00:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "consultas" ("data_hora", "created_at", "convenio_id", "updated_at", "valor", "pessoa_id", "local_id", "efetuado") VALUES('2010-08-22 12:00:00.000000', '2011-08-29 18:30:12.250969', 1, '2011-08-29 18:30:12.250969', 120.0, 1, 1, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consultas
+Completed in 26ms (DB: 7) | 302 Found [http://test.host/consultas/create?record%5Bconvenio%5D=1&record%5Bdata_hora%5D=22%2F08%2F2010+12%3A00+PM&record%5Blocal%5D=1&record%5Bpessoa%5D=1&record%5Bvalor%5D=120]
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.0ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConsulta Load (0.7ms)[0m   [0;1mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.8ms)[0m   [0mSELECT * FROM "consultas" ORDER BY consultas.id DESC LIMIT 1[0m
+  [4;36;1mConvenio Load (0.7ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m

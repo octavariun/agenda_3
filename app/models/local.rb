@@ -6,7 +6,7 @@ class Local < ActiveRecord::Base
   pesquisar_por "locais.id", "locais.nome"
 
   def descricao_para_pesquisa
-    "#{id} - #{nome}"
+    "#{nome}"
   end
 
   def to_label

@@ -5,7 +5,6 @@ class EstadoTest < ActiveSupport::TestCase
     estado = Estado.new
     estado.valid?
     assert estado.errors[:nome]
-    assert estado.errors[:sigla]
   end
 
   test "Se valida tamanho da sigla" do

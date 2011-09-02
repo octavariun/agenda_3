@@ -1,4 +1,5 @@
 luke:
+  id: 1
   nome: Luke Skywalker
   cpf: 05941435940
   telefone: 4688044306
@@ -10,6 +11,7 @@ luke:
   cidade: francisco_beltrao
 
 solo:
+  id: 2
   nome: Han Solo
   cpf: 05101288900
   telefone: 4688186530
@@ -21,6 +23,7 @@ solo:
   cep: 85605410
 
 goku:
+  id: 3
   nome: Son Goku
   cpf: 03931465041
   telefone: 4688041234
