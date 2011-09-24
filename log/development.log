@@ -23533,3 +23533,1779 @@ Rendered _list_actions (7.1ms)
 Rendered _list_record (21.1ms)
 Rendered _messages (1.0ms)
 Completed in 263ms (View: 52, DB: 68) | 200 OK [http://localhost/consultas/create?_=&record_convenio__de_controle=&record_convenio_campo_pesquisa_=&record_local__de_controle=&record_local_campo_pesquisa_=&record_pessoa__de_controle=&record_pessoa_campo_pesquisa_=]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEstados (20110628130017)
+Migrating to CreateCidades (20110628132952)
+Migrating to CreateConvenios (20110628133735)
+Migrating to CreateLocais (20110628135051)
+Migrating to CreatePessoas (20110628140828)
+Migrating to CreateConsultas (20110628165220)
+Migrating to DeviseCreateUsers (20110725133449)
+Migrating to DeviseCreateUsuarios (20110905120455)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (373.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(128) DEFAULT '' NOT NULL, "password_salt" character varying(255) DEFAULT '' NOT NULL, "confirmation_token" character varying(255), "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "reset_password_token" character varying(255), "remember_token" character varying(255), "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (28.2ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")[0m
+  [4;35;1mSQL (29.2ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_confirmation_token" ON "usuarios" ("confirmation_token")[0m
+  [4;36;1mSQL (44.3ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_reset_password_token" ON "usuarios" ("reset_password_token")[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110905120455')[0m
+  [4;36;1mSQL (13.9ms)[0m   [0;1mCOMMIT[0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsuarios (20110905120455)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mDROP TABLE "usuarios"[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110905120455'[0m
+  [4;36;1mSQL (14.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEstados (20110628130017)
+Migrating to CreateCidades (20110628132952)
+Migrating to CreateConvenios (20110628133735)
+Migrating to CreateLocais (20110628135051)
+Migrating to CreatePessoas (20110628140828)
+Migrating to CreateConsultas (20110628165220)
+Migrating to DeviseCreateUsers (20110725133449)
+Migrating to DeviseCreateUsuarios (20110905120455)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (146.0ms)[0m   [0mCREATE TABLE "usuarios" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(128) DEFAULT '' NOT NULL, "password_salt" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "remember_token" character varying(255), "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")[0m
+  [4;35;1mSQL (65.9ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_reset_password_token" ON "usuarios" ("reset_password_token")[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110905120455')[0m
+  [4;35;1mSQL (17.3ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:19:14) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 150ms (View: 149, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:19:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:19:29) [GET]
+
+ActionController::RoutingError (No route matches "/usuario/sign_up" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 09:19:40) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (2.3ms)
+Completed in 92ms (View: 45, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:19:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2011-09-05 09:20:00) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"password_confirmation"=>"cassio", "password"=>"cassio", "email"=>"cassio@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Load (1.9ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'cassio@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "usuarios" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "email") VALUES('955f8f0364418d84c7cc32746d6a43524c405517', '2011-09-05 12:20:01.001210', NULL, '2011-09-05 12:20:01.001210', NULL, 0, 'oujiMlTTT_CXrB6PlIH1', NULL, NULL, NULL, NULL, NULL, 'cassio@gmail.com') RETURNING "id"[0m
+  [4;35;1mSQL (11.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (1.3ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-09-05 12:20:01.059226', "sign_in_count" = 1, "current_sign_in_at" = '2011-09-05 12:20:01.040040', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2011-09-05 12:20:01.040040', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+  [4;36;1mSQL (23.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 112ms (DB: 42) | 302 Found [http://localhost/usuarios]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:20:01) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Completed in 121ms (View: 121, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:20:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:20:13) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.1ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 15ms (DB: 5) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:20:13) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Completed in 135ms (View: 134, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:20:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-05 09:20:21) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 39ms (DB: 5) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:20:21) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:20:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:20:25) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 47ms (View: 36, DB: 3) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:20:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 09:20:28) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "password"=>"cassio", "email"=>"cassio@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.9ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."email" = 'cassio@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (1.3ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-09-05 12:20:28.083370', "sign_in_count" = 2, "current_sign_in_at" = '2011-09-05 12:20:28.081439' WHERE "id" = 1[0m
+  [4;35;1mSQL (18.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 64ms (DB: 25) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:20:28) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Completed in 15ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:20:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 09:22:18) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (11.8ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 40ms (DB: 13) | 302 Found [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:22:18) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+
+ActionView::TemplateError (undefined method `user_signed_in?' for #<ActionView::Base:0x7f6444dfc2d0>) on line #16 of app/views/layouts/application.html.erb:
+13:     <p class="alert"><%= flash[:alert] %></p>
+14:     
+15:     <div id="user_nav">
+16:       <% if user_signed_in? %>
+17:         Signed in as <%= current_user.email %>. Not you?
+18:         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+19:       <% else %>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:22:54) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+
+ActionView::TemplateError (undefined method `user_signed_in?' for #<ActionView::Base:0x7f64447a9d10>) on line #16 of app/views/layouts/application.html.erb:
+13:     <p class="alert"><%= flash[:alert] %></p>
+14:     
+15:     <div id="user_nav">
+16:       <% if user_signed_in? %>
+17:         Signed in as <%= current_usuario.email %>. Not you?
+18:         <%= link_to "Sign out", destroy_usuario_session_path, :method => :delete %>
+19:       <% else %>
+
+    app/views/layouts/application.html.erb:16
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:24:13) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.7ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Completed in 166ms (View: 163, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:24:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:24:54) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Completed in 32ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:24:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:25:07) [DELETE]
+  Parameters: {"authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0="}
+
+ActionController::MethodNotAllowed (Only get requests are allowed.):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (method_not_allowed)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-05 09:28:14) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 51ms (DB: 4) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:28:14) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 09:28:17) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (1.5ms)
+Completed in 56ms (View: 44, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:28:41) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 124ms (View: 123, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 09:28:43) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (1.4ms)
+Completed in 49ms (View: 37, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:28:45) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 43ms (View: 31, DB: 1) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 09:28:47) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "password"=>"cassio", "email"=>"cassio@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (3.0ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."email" = 'cassio@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (1.0ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-09-05 12:28:47.226592', "sign_in_count" = 3, "current_sign_in_at" = '2011-09-05 12:28:47.223008', "last_sign_in_at" = '2011-09-05 12:20:28.081439' WHERE "id" = 1[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 85ms (DB: 24) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:28:47) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Completed in 27ms (View: 24, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:28:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-05 09:36:28) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 43ms (DB: 3) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:36:28) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 9ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:36:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:36:30) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 47ms (View: 35, DB: 1) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:36:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:40:15) [GET]
+
+NoMethodError (undefined method `before_filter' for #<PrincipalController:0x7f5bb7200d68>):
+  app/controllers/principal_controller.rb:3:in `index'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:40:19) [GET]
+
+NoMethodError (undefined method `before_filter' for #<PrincipalController:0x7f5bb6e8d488>):
+  app/controllers/principal_controller.rb:3:in `index'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (272.9ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:41:18) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:41:18) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (2.3ms)
+Completed in 203ms (View: 177, DB: 3) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:41:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 09:41:23) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "password"=>"cassio", "email"=>"cassio@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.9ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."email" = 'cassio@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (1.0ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-09-05 12:41:23.862051', "sign_in_count" = 4, "current_sign_in_at" = '2011-09-05 12:41:23.860434', "last_sign_in_at" = '2011-09-05 12:28:47.223008' WHERE "id" = 1[0m
+  [4;35;1mSQL (14.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 68ms (DB: 20) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:41:24) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 50ms (View: 34, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:41:27) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 25ms (View: 10, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:41:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-05 09:41:30) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.9ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 39ms (DB: 4) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 09:41:30) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 09:41:30) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 40ms (View: 29, DB: 2) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 09:41:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEstados (20110628130017)
+Migrating to CreateCidades (20110628132952)
+Migrating to CreateConvenios (20110628133735)
+Migrating to CreateLocais (20110628135051)
+Migrating to CreatePessoas (20110628140828)
+Migrating to CreateConsultas (20110628165220)
+Migrating to DeviseCreateUsers (20110725133449)
+Migrating to DeviseCreateUsuarios (20110905120455)
+Migrating to AddUsernameToUsuario (20110905143217)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mALTER TABLE "usuarios" ADD COLUMN "username" character varying(255)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110905143217')[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 11:35:57) [GET]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:35:57) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (2.3ms)
+Completed in 71ms (View: 45, DB: 3) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:35:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:37:07) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.9ms)
+Completed in 47ms (View: 20, DB: 1) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:37:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 11:37:14) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (1.3ms)
+Completed in 51ms (View: 39, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:37:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 11:37:34) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (3.4ms)
+Completed in 53ms (View: 41, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:37:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 11:38:04) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (4.3ms)
+Completed in 59ms (View: 47, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:38:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2011-09-05 11:38:12) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"password_confirmation"=>"cassio", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+WARNING: Can't mass-assign these protected attributes: username
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 175ms (View: 42, DB: 3) | 200 OK [http://localhost/usuarios]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:38:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2011-09-05 11:39:59) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"password_confirmation"=>"cassio", "username"=>"cassio@gmail.com", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+WARNING: Can't mass-assign these protected attributes: username
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "usuarios" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "username", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "email") VALUES('691886971c679c99e94247de9cf7ec6c0babf419', '2011-09-05 14:39:59.576006', NULL, '2011-09-05 14:39:59.576006', NULL, NULL, 0, '_DbYVNdByZUiRN7pqwvk', NULL, NULL, NULL, NULL, NULL, '') RETURNING "id"[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (1.0ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-09-05 14:39:59.615956', "sign_in_count" = 1, "current_sign_in_at" = '2011-09-05 14:39:59.610779', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2011-09-05 14:39:59.610779', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 64ms (DB: 15) | 302 Found [http://localhost/usuarios]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 11:39:59) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.7ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 49ms (View: 35, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-05 11:40:03) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 46ms (DB: 3) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 11:40:03) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:40:03) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 173ms (View: 162, DB: 1) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2011-09-05 11:40:07) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (1.0ms)
+Completed in 42ms (View: 32, DB: 1) | 200 OK [http://localhost/usuarios/sign_up]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:40:10) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.9ms)
+Completed in 45ms (View: 35, DB: 1) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 11:40:12) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio@gmail.com", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.8ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 59ms (View: 18, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:40:14) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 146ms (View: 136, DB: 1) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 11:40:24) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.7ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 42ms (View: 11, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 11:40:47) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.8ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 46ms (View: 11, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:40:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-05 11:42:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (2.2ms)
+Completed in 70ms (View: 60, DB: 1) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:42:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-05 11:42:52) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"v+Z6l+E4tOh0ksDCQRra7Zegk5xvINVJz1FNF+Gb1H0=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.7ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (0.9ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-09-05 14:42:52.694639', "sign_in_count" = 2, "current_sign_in_at" = '2011-09-05 14:42:52.692879' WHERE "id" = 2[0m
+  [4;36;1mSQL (19.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 72ms (DB: 24) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (2.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 11:42:52) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 46ms (View: 32, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:42:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-05 11:43:30) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (3.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 32ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-05 11:43:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-06 16:37:27) [GET]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-06 16:37:27) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (11.1ms)
+Completed in 572ms (View: 127, DB: 2) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 16:37:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-06 16:37:46) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"tikdhvqzXtb8sy9xzmN+JoKFhRjmQXFrGUIOybSJPws=", "usuario"=>{"remember_me"=>"1", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (42.6ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (21.8ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-09-06 19:37:46.362761', "remember_token" = '-bGBCUUS7fqXD9ly7VqP', "remember_created_at" = '2011-09-06 19:37:46.339418' WHERE "id" = 2[0m
+  [4;35;1mSQL (86.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (0.9ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-09-06 19:37:46.477396', "sign_in_count" = 3, "current_sign_in_at" = '2011-09-06 19:37:46.475617', "last_sign_in_at" = '2011-09-05 14:42:52.692879' WHERE "id" = 2[0m
+  [4;36;1mSQL (8.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 265ms (DB: 163) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-06 16:37:46) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 58ms (View: 43, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 16:37:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#index (for 127.0.0.1 at 2011-09-06 16:37:57) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (71.7ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (2.0ms)[0m   [0;1mSELECT "consultas".* FROM "consultas" ORDER BY "consultas"."data_hora" ASC, "consultas"."pessoa_id" ASC LIMIT 15 OFFSET 0[0m
+  [4;35;1mPessoa Load (2.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" IN (1,2,3)) [0m
+  [4;36;1mLocal Load (19.6ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" IN (1,2,3,4)) [0m
+  [4;35;1mConvenio Load (50.1ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" IN (1,2)) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (13.3ms)
+Rendered _list_column_headings (27.4ms)
+Rendered _messages (11.5ms)
+Rendered _list_actions (6.2ms)
+Rendered _list_record (26.0ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (11.9ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (11.6ms)
+Rendered _list_actions (4.7ms)
+Rendered _list_record (11.5ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.1ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (11.1ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.6ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.1ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (11.3ms)
+Rendered _list (190.2ms)
+  [4;36;1mUsuario Load (1.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Completed in 615ms (View: 441, DB: 148) | 200 OK [http://localhost/consultas]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 16:37:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#index (for 127.0.0.1 at 2011-09-06 16:45:59) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;36;1mConvenio Load (21.9ms)[0m   [0;1mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (6.9ms)
+Rendered _list_column_headings (6.4ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (6.7ms)
+Rendered _list_record (15.6ms)
+Rendered _list_actions (4.6ms)
+Rendered _list_record (6.7ms)
+Rendered _list (51.3ms)
+  [4;35;1mUsuario Load (1.5ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Completed in 290ms (View: 254, DB: 25) | 200 OK [http://localhost/convenios]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 16:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-06 17:54:39) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (3.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 46ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 17:54:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-09-06 17:54:41) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (2.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (1.3ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-09-06 20:54:41.213149', "remember_token" = NULL, "remember_created_at" = NULL WHERE "id" = 2[0m
+  [4;36;1mSQL (18.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 227ms (DB: 23) | 302 Found [http://localhost/usuarios/sign_out]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-06 17:54:41) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-06 17:54:41) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.9ms)
+  [4;36;1mUsuario Load (1.7ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+Completed in 49ms (View: 36, DB: 3) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 17:54:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PasswordsController#edit (for 127.0.0.1 at 2011-09-06 17:55:23) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering passwords/edit
+Rendered shared/_devise_links (1.2ms)
+  [4;35;1mUsuario Load (2.0ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+Completed in 135ms (View: 118, DB: 4) | 200 OK [http://localhost/usuarios/password/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-06 17:55:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-17 11:31:10) [GET]
+  [4;35;1mUsuario Load (215.0ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-09-17 11:31:10) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (22.5ms)
+  [4;35;1mUsuario Load (5.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+Completed in 300ms (View: 169, DB: 7) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:31:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-17 11:32:16) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"cmsYjexWxxQm2+6218t9lQB9ohcFEB2yBixWOm9TGJw=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio@gmail.com", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.1ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;35;1mUsuario Load (1.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 70ms (View: 13, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:32:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-17 11:32:19) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"cmsYjexWxxQm2+6218t9lQB9ohcFEB2yBixWOm9TGJw=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio@gmail.com", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;35;1mUsuario Load (1.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 49ms (View: 11, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:32:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-17 11:32:26) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"cmsYjexWxxQm2+6218t9lQB9ohcFEB2yBixWOm9TGJw=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio", "password"=>"protozoarius"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;35;1mUsuario Load (1.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, username
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 55ms (View: 12, DB: 4) | 200 OK [http://localhost/usuarios/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:32:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-09-17 11:32:30) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"cmsYjexWxxQm2+6218t9lQB9ohcFEB2yBixWOm9TGJw=", "usuario"=>{"remember_me"=>"0", "username"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = '2') LIMIT 1[0m
+  [4;35;1mUsuario Load (1.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."username" = 'cassio') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (60.7ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-09-17 14:32:30.348224', "sign_in_count" = 4, "current_sign_in_at" = '2011-09-17 14:32:30.346434', "last_sign_in_at" = '2011-09-06 19:37:46.475617' WHERE "id" = 2[0m
+  [4;36;1mSQL (29.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 147ms (DB: 95) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-09-17 11:32:30) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 66ms (View: 52, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:32:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#index (for 127.0.0.1 at 2011-09-17 11:32:39) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (96.3ms)[0m   [0mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;36;1mConvenio Load (7.7ms)[0m   [0;1mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (13.1ms)
+Rendered _list_column_headings (8.8ms)
+Rendered _messages (8.2ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (15.7ms)
+Rendered _list_actions (4.8ms)
+Rendered _list_record (6.8ms)
+Rendered _list (69.6ms)
+  [4;35;1mUsuario Load (1.4ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Completed in 423ms (View: 303, DB: 106) | 200 OK [http://localhost/convenios]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-09-17 11:32:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/locale/pt-BR.js" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#edit (for 127.0.0.1 at 2011-09-17 11:32:42) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mConvenio Load (1.2ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+Rendered _form_attribute (2.8ms)
+Rendered _form (24.3ms)
+Rendered _update_form (64.5ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (8.1ms)
+Completed in 119ms (View: 12, DB: 0) | 200 OK [http://localhost/convenios/edit/1?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#row (for 127.0.0.1 at 2011-09-17 11:32:44) [GET]
+  Parameters: {"id"=>"1"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+Rendered _list_actions (6.9ms)
+Rendered _list_record (17.9ms)
+Completed in 64ms (View: 54, DB: 2) | 200 OK [http://localhost/convenios/row/1?_method=get]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#new (for 127.0.0.1 at 2011-09-17 11:32:45) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendered _form_attribute (2.4ms)
+Rendered _form (13.0ms)
+Rendered _create_form (48.9ms)
+Rendered _messages (1.2ms)
+Rendered _list_inline_adapter (8.3ms)
+Completed in 268ms (View: 16, DB: 0) | 200 OK [http://localhost/convenios/new?_method=get&adapter=_list_inline_adapter]

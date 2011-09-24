@@ -1,39 +1,35 @@
 en:
-  errors:
-    messages:
-      not_found: "não encontrado"
-      already_confirmed: "já foi confirmado"
-      not_locked: "não foi bloqueado"
-
   devise:
-    failure:
-      unauthenticated: 'Para continuar, faça login ou registre-se.'
-      unconfirmed: 'Antes de continuar, confirme a sua conta.'
-      locked: 'A sua conta está bloqueada.'
-      invalid: 'Email ou senha inválidos.'
-      invalid_token: 'O token de autenticação não é válido.'
-      timeout: 'A sua sessão expirou, por favor faça login novamente para poder continuar.'
-      inactive: 'A sua conta ainda não foi ativada.'
     sessions:
-      signed_in: 'Conectado com sucesso.'
-      signed_out: 'Desconectado com sucesso.'
+      link: 'Sign in'
+      signed_in: 'Signed in successfully.'
+      signed_out: 'Signed out successfully.'
+      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'Invalid email or password.'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
     passwords:
-      send_instructions: 'Dentro de minutos, receberá um email com as instruções de reinicialização da senha.'
-      updated: 'A sua senha foi alterada com sucesso. Agora está conectado.'
+      link: 'Forgot password?'
+      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
+      updated: 'Your password was changed successfully. You are now signed in.'
     confirmations:
-      send_instructions: 'Dentro de minutos, receberá um email com as instruções de confirmação da sua conta.'
-      confirmed: 'A sua conta foi confirmada com sucesso. Agora está conectado.'
+      link: "Didn't receive confirmation instructions?"
+      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
+      confirmed: 'Your account was successfully confirmed. You are now signed in.'
     registrations:
-      signed_up: 'Conectado com sucesso. Se não autorizado, a confirmação foi enviada por email.'
-      updated: 'A sua conta foi atualizada com sucesso.'
-      destroyed: 'Adeus! A sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+      link: 'Sign up'
+      signed_up: 'You have signed up successfully. If enabled, a confirmation was sent to your e-mail.'
+      updated: 'You updated your account successfully.'
+      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
     unlocks:
-      send_instructions: 'Dentro de minutos, receberá um email com as instruções como desbloquear a sua conta.'
-      unlocked: 'A sua conta foi desbloqueada com sucesso. Agora está conectado.'
+      link: "Didn't receive unlock instructions?"
+      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'Your account was successfully unlocked. You are now signed in.'
     mailer:
-      confirmation_instructions:
-        subject: 'Instruções de confirmação'
-      reset_password_instructions:
-        subject: 'Instruções de reinicialização de senha'
-      unlock_instructions:
-        subject: 'Instruções de desbloqueio'
+      confirmation_instructions: 'Confirmation instructions'
+      reset_password_instructions: 'Reset password instructions'
+      unlock_instructions: 'Unlock Instructions'
+

@@ -4,13 +4,24 @@
     <title>Agenda</title>
     <%= javascript_include_tag :defaults %>
 
-<%= calendar_date_select_includes nil,:locale=>'pt-BR' %>
+    <%= calendar_date_select_includes nil,:locale=>'pt-BR' %>
 
     <%= active_scaffold_includes %>
   </head>
   <body>
     <p class="notice"><%= flash[:notice] %></p>
     <p class="alert"><%= flash[:alert] %></p>
+    
+    <div id="user_nav">
+      <% if usuario_signed_in? %>
+        Logado como <%= current_usuario.username %>
+        <%= link_to "Sair", destroy_usuario_session_path %>
+      <% else %>
+        <%= link_to "Criar usuario", new_usuario_registration_path %> ou <%= link_to "logar", new_usuario_session_path %>
+      <% end %>
+    </div>
+
+
     <%= yield %>
 
   </body>
