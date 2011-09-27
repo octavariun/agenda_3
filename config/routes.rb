@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.devise_for :usuarios
 
+#    match 'gravar_senha', :to => 'alterar_senha#update'
+
+  map.gravar_senha "gravar_senha", :controller => "alterar_senha", :action => "update"
+
 
   
 
