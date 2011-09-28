@@ -5,5 +5,5 @@ class Usuario < ActiveRecord::Base
          :rememberable, :trackable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :usuario, :password, :password_confirmation
 end

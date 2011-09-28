@@ -11,7 +11,7 @@ class DeviseCreateUsuarios < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :usuarios, :email,                :unique => true
+#    add_index :usuarios,                        :unique => true
 #    add_index :usuarios, :confirmation_token,   :unique => true
     add_index :usuarios, :reset_password_token, :unique => true
     # add_index :usuarios, :unlock_token,         :unique => true

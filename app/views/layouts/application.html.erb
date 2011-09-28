@@ -14,7 +14,7 @@
     
     <div id="user_nav">
       <% if usuario_signed_in? %>
-        Logado como <%= current_usuario.username %>
+        Logado como <%= current_usuario.usuario %>
         <%= link_to "Sair", destroy_usuario_session_path %>
       <% else %>
         <%= link_to "Criar usuario", new_usuario_registration_path %> ou <%= link_to "logar", new_usuario_session_path %>
