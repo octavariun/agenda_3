@@ -4,6 +4,14 @@ class Usuario < ActiveRecord::Base
   devise :registerable, :authenticatable, :recoverable,
          :rememberable, :trackable
 
-  # Setup accessible (or protected) attributes for your model
   attr_accessible :usuario, :password, :password_confirmation
+
+
+  validates_presence_of :usuario,:password
+  validates_confirmation_of :password
+
+  def to_label
+    self.usuario
+  end
+
 end
