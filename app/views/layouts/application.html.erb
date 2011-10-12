@@ -9,10 +9,18 @@
     <%= active_scaffold_includes %>
   </head>
   <body>
+    <div class="header">
+      <% if usuario_signed_in? %>
+        <%= render :partial => 'layouts/header' %>
+      <% end %>
+    </div>
+    <br/>
+    <br/>
+
     <p class="notice"><%= flash[:notice] %></p>
     <p class="alert"><%= flash[:alert] %></p>
-    
     <div id="user_nav">
+
       <% if usuario_signed_in? %>
         Logado como <%= current_usuario.usuario %>
         <%= link_to "Sair", destroy_usuario_session_path %>
