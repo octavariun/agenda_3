@@ -34853,3 +34853,445 @@ ActionController::RoutingError (No route matches "/javascripts/calendar_date_sel
   warden (0.10.7) lib/warden/manager.rb:34:in `call'
 
 Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-10-11 23:44:38) [GET]
+  [4;35;1mUsuario Load (2.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Rendered layouts/_header (18.2ms)
+Completed in 176ms (View: 167, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#index (for 127.0.0.1 at 2011-10-11 23:44:42) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;36;1mConsulta Load (1.4ms)[0m   [0;1mSELECT "consultas".* FROM "consultas" ORDER BY "consultas"."data_hora" ASC, "consultas"."pessoa_id" ASC LIMIT 15 OFFSET 0[0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" IN (1,2,3)) [0m
+  [4;36;1mLocal Load (0.9ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" IN (1,3,4)) [0m
+  [4;35;1mConvenio Load (0.9ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" IN (1,2)) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.3ms)
+Rendered _list_column_headings (22.7ms)
+Rendered _messages (1.1ms)
+Rendered _list_actions (7.1ms)
+Rendered _list_record (149.9ms)
+Rendered _list_actions (4.5ms)
+Rendered _list_record (14.4ms)
+Rendered _list_actions (3.9ms)
+Rendered _list_record (11.1ms)
+Rendered _list_actions (3.9ms)
+Rendered _list_record (11.2ms)
+Rendered _list_actions (4.0ms)
+Rendered _list_record (11.6ms)
+Rendered _list_actions (4.0ms)
+Rendered _list_record (11.2ms)
+Rendered _list_actions (3.9ms)
+Rendered _list_record (11.2ms)
+Rendered _list_actions (3.9ms)
+Rendered _list_record (11.4ms)
+Rendered _list (275.8ms)
+  [4;36;1mUsuario Load (1.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.3ms)
+Completed in 352ms (View: 323, DB: 8) | 200 OK [http://localhost/consultas]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#index (for 127.0.0.1 at 2011-10-11 23:44:58) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.9ms)[0m   [0mSELECT "consultas".* FROM "consultas" ORDER BY "consultas"."data_hora" ASC, "consultas"."pessoa_id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mPessoa Load (1.2ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" IN (1,2,3)) [0m
+  [4;35;1mLocal Load (1.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" IN (1,3,4)) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" IN (1,2)) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.8ms)
+Rendered _list_column_headings (21.8ms)
+Rendered _messages (1.1ms)
+Rendered _list_actions (119.5ms)
+Rendered _list_record (136.7ms)
+Rendered _list_actions (4.7ms)
+Rendered _list_record (12.4ms)
+Rendered _list_actions (4.4ms)
+Rendered _list_record (12.0ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.7ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.1ms)
+Rendered _list_actions (4.7ms)
+Rendered _list_record (11.6ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (10.9ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (10.8ms)
+Rendered _list (259.3ms)
+  [4;35;1mUsuario Load (1.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Completed in 342ms (View: 306, DB: 9) | 200 OK [http://localhost/consultas]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#edit (for 127.0.0.1 at 2011-10-11 23:45:06) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"882099334"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mConsulta Load (61.7ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 882099334) [0m
+Rendered _form_attribute (3.9ms)
+  [4;36;1mPessoa Load (2.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendered _form_attribute (14.9ms)
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+Rendered _form_attribute (7.7ms)
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+Rendered _form_attribute (10.5ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (2.0ms)
+Rendered _form (75.7ms)
+Rendered _update_form (111.8ms)
+Rendered _messages (1.6ms)
+Rendered _list_inline_adapter (10.3ms)
+Completed in 221ms (View: 14, DB: 0) | 200 OK [http://localhost/consultas/edit/882099334?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#update (for 127.0.0.1 at 2011-10-11 23:45:16) [PUT]
+  Parameters: {"record_pessoa_campo_pesquisa_882099334"=>"Luke Skywalker", "commit"=>"Atualizar", "record_local_campo_pesquisa_882099334"=>"sauna", "record_convenio_campo_pesquisa_882099334"=>"Unimed", "authenticity_token"=>"X7Zv6Re1xK2ty59zqMsXxyDhcc40pF9nflW3gnmy25A=", "id"=>"882099334", "record_convenio_882099334_de_controle"=>"Unimed", "record_local_882099334_de_controle"=>"sauna", "Efetuado"=>"true", "_"=>"", "record"=>{"local"=>"1", "data_hora"=>"Novembro 17, 2010 9:30 AM", "valor"=>"100,0", "convenio"=>"1", "pessoa"=>"1"}, "record_pessoa_882099334_de_controle"=>"Luke Skywalker"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 882099334) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPessoa Load (1.0ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mLocal Load (0.9ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mConvenio Load (0.9ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mConsulta Load (15.3ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-17 09:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-17 09:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering on_update
+Rendered _list_actions (17.2ms)
+Rendered _list_record (37.3ms)
+Rendered _messages (1.2ms)
+Completed in 264ms (View: 206, DB: 23) | 200 OK [http://localhost/consultas/update/882099334]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#edit (for 127.0.0.1 at 2011-10-11 23:45:20) [GET]
+  Parameters: {"record_pessoa_campo_pesquisa_882099334"=>"Luke Skywalker", "record_convenio_campo_pesquisa_882099334"=>"Unimed", "record_local_campo_pesquisa_882099334"=>"sauna", "adapter"=>"_list_inline_adapter", "id"=>"882099334", "record_convenio_882099334_de_controle"=>"Unimed", "record_local_882099334_de_controle"=>"sauna", "Efetuado"=>"true", "_"=>"", "record_pessoa_882099334_de_controle"=>"Luke Skywalker"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mConsulta Load (1.2ms)[0m   [0;1mSELECT * FROM "consultas" WHERE ("consultas"."id" = 882099334) [0m
+Rendered _form_attribute (3.4ms)
+  [4;35;1mPessoa Load (1.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendered _form_attribute (14.4ms)
+  [4;36;1mLocal Load (0.9ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+Rendered _form_attribute (8.2ms)
+  [4;35;1mConvenio Load (1.3ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+Rendered _form_attribute (12.4ms)
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (2.6ms)
+Rendered _form (57.5ms)
+Rendered _update_form (77.1ms)
+Rendered _messages (1.2ms)
+Rendered _list_inline_adapter (8.3ms)
+Completed in 123ms (View: 13, DB: 0) | 200 OK [http://localhost/consultas/edit/882099334?Efetuado=true&_=&_method=get&record_convenio_882099334_de_controle=Unimed&record_convenio_campo_pesquisa_882099334=Unimed&record_local_882099334_de_controle=sauna&record_local_campo_pesquisa_882099334=sauna&record_pessoa_882099334_de_controle=Luke+Skywalker&record_pessoa_campo_pesquisa_882099334=Luke+Skywalker&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#update (for 127.0.0.1 at 2011-10-11 23:45:22) [PUT]
+  Parameters: {"record_pessoa_campo_pesquisa_882099334"=>"Luke Skywalker", "commit"=>"Atualizar", "record_local_campo_pesquisa_882099334"=>"sauna", "record_convenio_campo_pesquisa_882099334"=>"Unimed", "authenticity_token"=>"X7Zv6Re1xK2ty59zqMsXxyDhcc40pF9nflW3gnmy25A=", "id"=>"882099334", "record_convenio_882099334_de_controle"=>"Unimed", "record_local_882099334_de_controle"=>"sauna", "Efetuado"=>"true", "_"=>"", "record"=>{"local"=>"1", "data_hora"=>"November 17, 2010 09:30 AM", "valor"=>"100,0", "convenio"=>"1", "pessoa"=>"1"}, "record_pessoa_882099334_de_controle"=>"Luke Skywalker"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mConsulta Load (1.5ms)[0m   [0mSELECT * FROM "consultas" WHERE ("consultas"."id" = 882099334) [0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPessoa Load (2.1ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "locais" WHERE ("locais"."id" = 1) [0m
+  [4;35;1mConvenio Load (0.9ms)[0m   [0mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" = 1) [0m
+  [4;35;1mConsulta Load (0.9ms)[0m   [0mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-17 09:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "consultas" WHERE (data_hora = '2010-11-17 09:30:00.000000' ) AND ("consultas".local_id = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering on_update
+Rendered _list_actions (20.0ms)
+Rendered _list_record (158.4ms)
+Rendered _messages (1.2ms)
+Completed in 240ms (View: 188, DB: 10) | 200 OK [http://localhost/consultas/update/882099334?Efetuado=true&_=&record_convenio_882099334_de_controle=Unimed&record_convenio_campo_pesquisa_882099334=Unimed&record_local_882099334_de_controle=sauna&record_local_campo_pesquisa_882099334=sauna&record_pessoa_882099334_de_controle=Luke+Skywalker&record_pessoa_campo_pesquisa_882099334=Luke+Skywalker]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-10-13 14:28:22) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-10-13 14:28:22) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (4.6ms)
+Completed in 769ms (View: 177, DB: 1) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-10-13 14:28:28) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"eeHja6qi66Zri1tRaAZ7sHQ1gcFCXM7UmWCLWsa/NW0=", "usuario"=>{"remember_me"=>"0", "usuario"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (34.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."usuario" = 'cassio') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (21.1ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-10-13 17:28:28.634984', "sign_in_count" = 6, "current_sign_in_at" = '2011-10-13 17:28:28.632719', "last_sign_in_at" = '2011-10-12 02:26:54.861832' WHERE "id" = 1[0m
+  [4;36;1mSQL (14.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 299ms (DB: 71) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-10-13 14:28:28) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Rendered layouts/_header (19.0ms)
+Completed in 99ms (View: 85, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#index (for 127.0.0.1 at 2011-10-13 14:28:37) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (47.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.9ms)[0m   [0mSELECT "consultas".* FROM "consultas" ORDER BY "consultas"."data_hora" ASC, "consultas"."pessoa_id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mPessoa Load (1.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" IN (1,2,3)) [0m
+  [4;35;1mLocal Load (1.5ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" IN (1,3,4)) [0m
+  [4;36;1mConvenio Load (1.6ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" IN (1,2)) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (6.2ms)
+Rendered _list_column_headings (25.0ms)
+Rendered _messages (1.6ms)
+Rendered _list_actions (6.7ms)
+Rendered _list_record (25.6ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (11.8ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.7ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (11.3ms)
+Rendered _list_actions (4.5ms)
+Rendered _list_record (12.3ms)
+Rendered _list_actions (5.1ms)
+Rendered _list_record (12.3ms)
+Rendered _list_actions (4.4ms)
+Rendered _list_record (11.6ms)
+Rendered _list_actions (4.7ms)
+Rendered _list_record (12.3ms)
+Rendered _list (155.8ms)
+  [4;35;1mUsuario Load (1.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Completed in 404ms (View: 212, DB: 57) | 200 OK [http://localhost/consultas]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-10-16 14:59:58) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-10-16 14:59:58) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (3.6ms)
+Completed in 603ms (View: 154, DB: 1) | 200 OK [http://localhost/usuarios/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-10-16 15:00:06) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"WKblifcXeutoBEA3VWp+Ziu/PY4EHI+tZSA3uR3CXUU=", "usuario"=>{"remember_me"=>"0", "usuario"=>"cassio", "password"=>"cassio"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (43.8ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."usuario" = 'cassio') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (43.5ms)[0m   [0mUPDATE "usuarios" SET "updated_at" = '2011-10-16 17:00:06.654873', "sign_in_count" = 7, "current_sign_in_at" = '2011-10-16 17:00:06.653120', "last_sign_in_at" = '2011-10-13 17:28:28.632719' WHERE "id" = 1[0m
+  [4;36;1mSQL (19.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 347ms (DB: 109) | 302 Found [http://localhost/usuarios/sign_in]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2011-10-16 15:00:06) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (2.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering principal/index
+Rendered layouts/_header (18.9ms)
+Completed in 89ms (View: 75, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConveniosController#index (for 127.0.0.1 at 2011-10-16 15:00:11) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (71.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "convenios" [0m
+  [4;35;1mConvenio Load (4.8ms)[0m   [0mSELECT "convenios".* FROM "convenios" ORDER BY "convenios"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.5ms)
+Rendered _list_column_headings (5.9ms)
+Rendered _messages (20.0ms)
+Rendered _list_actions (8.0ms)
+Rendered _list_record (19.9ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (6.7ms)
+Rendered _list (169.6ms)
+  [4;36;1mUsuario Load (1.9ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Completed in 335ms (View: 244, DB: 80) | 200 OK [http://localhost/convenios]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ConsultasController#index (for 127.0.0.1 at 2011-10-16 15:00:14) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "consultas" [0m
+  [4;35;1mConsulta Load (1.4ms)[0m   [0mSELECT "consultas".* FROM "consultas" ORDER BY "consultas"."data_hora" ASC, "consultas"."pessoa_id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mPessoa Load (2.2ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" IN (1,2,3)) [0m
+  [4;35;1mLocal Load (1.6ms)[0m   [0mSELECT * FROM "locais" WHERE ("locais"."id" IN (1,3,4)) [0m
+  [4;36;1mConvenio Load (1.0ms)[0m   [0;1mSELECT * FROM "convenios" WHERE ("convenios"."id" IN (1,2)) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.3ms)
+Rendered _list_column_headings (23.0ms)
+Rendered _messages (1.2ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (23.6ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.4ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (11.4ms)
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.7ms)
+Rendered _list_actions (26.6ms)
+Rendered _list_record (135.1ms)
+Rendered _list_actions (5.8ms)
+Rendered _list_record (13.7ms)
+Rendered _list_actions (4.6ms)
+Rendered _list_record (12.6ms)
+Rendered _list_actions (4.4ms)
+Rendered _list_record (12.0ms)
+Rendered _list (275.1ms)
+  [4;35;1mUsuario Load (1.5ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.5ms)
+Completed in 360ms (View: 325, DB: 11) | 200 OK [http://localhost/consultas]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-10-16 15:00:16) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;36;1mPessoa Load (1.2ms)[0m   [0;1mSELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;35;1mCidade Load (14.7ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 660927305) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.7ms)
+Rendered _list_column_headings (32.5ms)
+Rendered _messages (1.1ms)
+Rendered _list_actions (6.2ms)
+Rendered _list_record (19.2ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (9.5ms)
+Rendered _list (91.2ms)
+  [4;36;1mUsuario Load (1.5ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.3ms)
+Completed in 324ms (View: 288, DB: 20) | 200 OK [http://localhost/pessoas]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing LocaisController#index (for 127.0.0.1 at 2011-10-16 15:00:18) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "locais" [0m
+  [4;35;1mLocal Load (1.9ms)[0m   [0mSELECT "locais".* FROM "locais" ORDER BY "locais"."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (5.1ms)
+Rendered _list_column_headings (8.8ms)
+Rendered _messages (1.2ms)
+Rendered _list_actions (5.9ms)
+Rendered _list_record (14.1ms)
+Rendered _list_actions (4.3ms)
+Rendered _list_record (6.9ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (6.5ms)
+Rendered _list_actions (4.0ms)
+Rendered _list_record (6.3ms)
+Rendered _list (178.6ms)
+  [4;36;1mUsuario Load (1.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.5ms)
+Completed in 244ms (View: 227, DB: 5) | 200 OK [http://localhost/locais]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-10-16 15:00:21) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /home/cassio/projetos/agenda/app/models/usuario.rb:4)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pessoas" [0m
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mCidade Load (1.1ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 660927305) [0m
+Rendering template within layouts/application
+Rendering list
+Rendered _list_header (4.9ms)
+Rendered _list_column_headings (33.3ms)
+Rendered _messages (1.5ms)
+Rendered _list_actions (5.2ms)
+Rendered _list_record (19.4ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (10.7ms)
+Rendered _list_actions (4.1ms)
+Rendered _list_record (10.1ms)
+Rendered _list (102.5ms)
+  [4;35;1mUsuario Load (1.5ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header (1.7ms)
+Completed in 311ms (View: 289, DB: 7) | 200 OK [http://localhost/pessoas]
