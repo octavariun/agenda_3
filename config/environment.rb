@@ -17,7 +17,7 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-   config.gem "devise", :version => "1.0.7"
+  config.gem "devise", :version => "1.0.7"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
@@ -35,16 +35,17 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'UTC'
+#  config.time_zone = 'UTC'
 
   config.active_record.schema_format = :sql
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-  config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}')]
+  config.time_zone = 'Brasilia'
+  config.active_record.default_timezone = :local
+#  config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}')]
   config.i18n.default_locale = 'pt-BR'
-
 end
 #CalendarDateSelect.format = :italian
 
-ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.update(:default=>'%d/%m/%Y %H:%M %p')
-ActiveSupport::CoreExtensions::Date::Conversions::DATE_FORMATS.update(:default=>'%d/%m/%Y')
+#ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.update(:default=>'%d/%m/%Y %H:%M %p')
+#ActiveSupport::CoreExtensions::Date::Conversions::DATE_FORMATS.update(:default=>'%d/%m/%Y')

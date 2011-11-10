@@ -1,5 +1,7 @@
 require "#{RAILS_ROOT}/lib/active_record_extensions"
 require "#{RAILS_ROOT}/lib/string_extensions"
+require "#{RAILS_ROOT}/lib/validations_extensions"
+
 
 ActiveRecord::Base.send :include, ActiveRecordPesquisa
 

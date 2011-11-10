@@ -9,7 +9,7 @@ class Consulta < ActiveRecord::Base
   end
 
   validates_presence_of :pessoa, :data_hora, :convenio, :valor, :local
-  
+
   validate :valida_quantidade_pessoas_local
   validate do |consulta|
     if(consulta.data_hora && consulta.hora == "00:00")
