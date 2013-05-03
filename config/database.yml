@@ -1,0 +1,25 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+#
+#
+# Be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+
+development: &development
+  adapter: postgresql
+  encoding: utf8
+  database: agenda_development
+  host: localhost
+  username: facilitador
+  password: facilitador
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: agenda
+  host: localhost
+  username: facilitador
+  password: facilitador
+
+test:
+  <<: *development
+  database: agenda_test

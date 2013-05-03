@@ -1,0 +1,21 @@
+  <p>
+      <% if @mensagens.blank? %>
+
+  <h1>Relatório de Consultas por Atendente</h1>
+        <% @consultas.each do |consulta|%>
+
+      <%= consulta.data.to_date.strftime("%d/%m/%Y") %>
+      <%= consulta.hora %> -
+      <%= consulta.pessoa.nome %> -
+      <%= consulta.valor.to_s.gsub(".",",") %> -
+      <%= consulta.atendente.nome %> -
+      <%= consulta.convenio.nome %> -
+      <%= consulta.local.nome %>
+
+  <br />
+        <% end %>
+    <% else %>
+      <%= @mensagens %>
+    <% end %>
+  </p>
+ 

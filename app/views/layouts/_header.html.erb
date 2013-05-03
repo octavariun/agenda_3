@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <%= stylesheet_link_tag 'superstylin', :media => 'all' %>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> index</title>
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="blue">
+
+        <li class="consultas_diarias"><span><%=link_to("Consultas Diárias", :controller => "consultas_diarias") %></span></li>
+        <li class="consultas"><span><%=link_to("Consultas ", :controller => "consultas") %></span></li>
+        <li class="pessoas"><span><%=link_to("Pessoas ", :controller => "pessoas") %></span></li>
+        <li class="convenios"><span><%=link_to("Convenios ", :controller => "convenios") %></span></li>
+        <li class="locais"><span><%=link_to("Locais ", :controller => "locais") %></span></li>
+        <li class="cidades"><span><%=link_to("Cidades ", :controller => "cidades") %></span></li>
+        <li class="estados"><span><%=link_to("Estados ", :controller => "estados") %></span></li>
+        <li class="atendentes"><span><%=link_to("Atendentes ", :controller => "atendentes") %></span></li>
+        <li class="cargos"><span><%=link_to("Cargos ", :controller => "cargos") %></span></li>
+        <li class="relatorio"><span><%=link_to("Relátorio geral ", relatorio_de_consultas_path) %></span></li>
+        <% if usuario_signed_in? %>
+        <li><%= link_to "Sair", destroy_usuario_session_path %></li>
+        <li>Logado como:<%= current_usuario.login %></li>
+        <% end %>
+      </ul>
+    </div>
+    <br/>
+  </body>
+</html>

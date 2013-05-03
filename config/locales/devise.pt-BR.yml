@@ -1,0 +1,50 @@
+pt-BR:
+  errors:
+    messages:
+      not_found: 'não encontrado'
+      already_confirmed: 'já foi confirmado'
+      not_locked: 'não foi bloqueado'
+      not_saved:
+        one: '1 erro impediu que %{resource} fosse gravado:'
+        other: '%{count} erros impediram que %{resource} fosse gravado:'
+
+  devise:
+    failure:
+      already_authenticated: 'Você já está logado.'
+      unauthenticated: 'Você precisa estar logado para continuar.'
+      invalid: 'Login ou Senha Inválido.'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Sua sessão acabou, refaça o login.'
+    sessions:
+      link: 'Login'
+      signed_in: 'Acessado com sucesso.'
+      signed_out: 'Você deslogou.'
+      unauthenticated: 'Você precisa estar logado para continuar.'
+      unconfirmed: 'Você deve confirmar sua conta antes de continuar.'
+      locked: 'Sua conta foi bloqueada.'
+      invalid: 'Email ou senha inválidos.'
+      invalid_token: 'Autenticação invalida.'
+      timeout: 'Sua sessão expirou, por favor logue novamente antes de continuar.'
+      inactive: 'Sua conta ainda não foi ativada.'
+    passwords:
+      link: 'Esqueceu sua senha?'
+      send_instructions: 'Em instantes você receberá um e-mail com as instruções.'
+      updated: 'Sua senha foi alterada com sucesso.'      
+    confirmations:
+      link: "Não recebeu email de confirmação?"
+      send_instructions: 'Você recebera um email com as instruções para confirmar sua conta em alguns minutos.'
+      confirmed: 'Sua conta foi confirmada com sucesso.'
+    registrations:
+      link: 'Registre-se'
+      signed_up: 'Em instantes você receberá um e-mail com sua senha e instruções'
+      updated: 'Você atualizou sua conta com sucesso.'
+      destroyed: 'Sua conta foi cancelada com sucesso.'
+    unlocks:
+      link: "Não recebeu instruções para destravar a conta?"
+      send_instructions: 'Você recebera as instruções de como destravar sua conta em alguns minutos.'
+      unlocked: 'Sua conta foi destravada com sucesso.'
+    mailer:
+      confirmation_instructions: 'Instruções de confirmação'
+      reset_password_instructions: 'Instruções para mudança de senha'
+      unlock_instructions: 'Instruções para destravar sua conta'
+

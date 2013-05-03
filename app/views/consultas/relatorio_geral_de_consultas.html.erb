@@ -1,0 +1,12 @@
+<%= form_tag( {:action => "exibir_relatorio"} ) do %>
+
+<p>
+    Data Inicial:
+    <%= date_select 'data_inicial', ''  %><br />
+    Data Final: 
+    <%= date_select 'data_final', ''  %><br />
+
+     Atendente: <%= select_tag "atendente", options_from_collection_for_select(Atendente.all, 'id', 'nome') %>
+  </p>
+  <%= submit_tag "Gerar Relatório" %>
+<% end %>
