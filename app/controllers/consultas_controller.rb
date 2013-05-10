@@ -64,11 +64,15 @@ class ConsultasController < ApplicationController
     if data_inicial.blank? || data_final.blank?
     @mensagens = 'Por favor preencha os campos corretamente para gerar o relatorio.'
     else
-    
-      @consultas = Consulta.all.select {|x|x.data_hora.to_date.to_s > data_inicial and x.data_hora.to_date.to_s < data_final and x.atendente_id == params[:atendente].to_i }
+      @total_valor = 0
+      @consultas = Consulta.all.select {|x|x.data_hora.to_date.to_s >= data_inicial and x.data_hora.to_date.to_s <= data_final and x.atendente_id == params[:atendente].to_i }
+      @quantidade_consultas = @consultas.count
+      @consultas.each do |consulta|
+        if consulta.efetuado
+          @total_valor += consulta.valor
+        end
+      end
     end
-    
   end
-
 
 end 

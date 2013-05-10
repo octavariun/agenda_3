@@ -4,13 +4,37 @@
   <h1>Relatório de Consultas por Atendente</h1>
         <% @consultas.each do |consulta|%>
 
-      <%= consulta.data.to_date.strftime("%d/%m/%Y") %>
-      <%= consulta.hora %> -
-      <%= consulta.pessoa.nome %> -
-      <%= consulta.valor.to_s.gsub(".",",") %> -
-      <%= consulta.atendente.nome %> -
-      <%= consulta.convenio.nome %> -
-      <%= consulta.local.nome %>
+  <table>
+    <tr style="border-bottom: 1px solid;">
+      <th>Data</th>
+      <th>Hora</th>
+      <th>Paciente</th>
+      <th>Valor</th>
+      <th>Atendente</th>
+      <th>Convênio</th>
+      <th>Local</th>
+    </tr>
+    <tr>
+      <td><%= consulta.data.to_date.strftime("%d/%m/%Y") %></td>
+      <td><%= consulta.hora %></td>
+      <td><%= consulta.pessoa.nome %></td>
+      <td><%= consulta.valor.to_s.gsub(".",",") %></td>
+      <td><%= consulta.atendente.nome %></td>
+      <td><%= consulta.convenio.nome %></td>
+      <td><%= consulta.local.nome %></td>
+    </tr>
+    <tr>
+      <th>Total de Consultas</th>
+      <th>Valor Total</th>
+    </tr>
+    <tr>
+      <td><%=  @quantidade_consultas %></td>
+      <td><%=  @total_valor %></td>
+    </tr>
+
+  </table>
+      
+             
 
   <br />
         <% end %>
