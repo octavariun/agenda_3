@@ -4,11 +4,10 @@ require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-   #Bundler.require(*Rails.groups(:assets => %w(development test)))
+	Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
-   Bundler.require(:default, :assets, Rails.env)
-end
+   end
 
 module Agenda3
   class Application < Rails::Application
@@ -55,7 +54,7 @@ module Agenda3
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
 
-	#config.assets.initialize_on_precompile = false
+	config.assets.initialize_on_precompile = false
 	
 	# Enable the asset pipeline
     config.assets.enabled = true
