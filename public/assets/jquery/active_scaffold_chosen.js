@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(document).on("as:element_updated",function(e){jQuery("select.chosen",e.target).chosen()}),jQuery(document).on("as:action_success","a.as_action",function(e,n){n.adapter&&jQuery("select.chosen",n.adapter).chosen()}),jQuery("select.chosen").chosen()});

@@ -1,0 +1,1 @@
+var action_link_close=ActiveScaffold.ActionLink.Abstract.prototype.close;ActiveScaffold.ActionLink.Abstract.prototype.close=function(){jQuery(this.adapter).find("textarea.mceEditor").each(function(t,o){tinyMCE.execCommand("mceRemoveControl",!1,jQuery(o).attr("id"))}),action_link_close.apply(this)};
